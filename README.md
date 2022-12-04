@@ -1,6 +1,8 @@
 # Stopwatch ⏱
 
-A precise stopwatch built on top of `perf_counter`. The stopwatch can optionally be started automatically by calling `time` instead of `start`, which can streamline usage when polling the time repeatedly.
+A precise stopwatch built on top of `perf_counter`.
+
+The stopwatch can optionally be started automatically by calling `time` instead of `start`, which can streamline usage when polling the time repeatedly.
 
 ## Installation
 
