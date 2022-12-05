@@ -45,8 +45,8 @@ class Stopwatch:
 
     def time(self, start: bool = False) -> float:
         """
-        Get the stopwatch time, in seconds. The stopwatch can optionally be started automatically by calling `time`
-        instead of `start`, which can streamline usage when polling the time repeatedly.
+        Get the stopwatch time, in seconds. The stopwatch can optionally be started automatically by calling
+        `time(True)` instead of `start()`, which can streamline usage when polling the time repeatedly.
         :param start: Start the stopwatch if it's not running. If the stopwatch is not running and start is True, the
         time returned will be the time immediately before it starts, e.g. it will return exactly 0 for a new object.
         """
