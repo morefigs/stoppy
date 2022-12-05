@@ -1,6 +1,6 @@
 # stoppy ⏱
 
-A precise and lightweight stopwatch built on top of `perf_counter`. Stopwatch can be used as a direct replacement for `perf_counter`, but with absolute timing that starts from zero.
+A precise and lightweight stopwatch built on top of `perf_counter`. Stopwatch can be used as a direct replacement for `perf_counter` that returns absolute timing starting from zero.
 
 The stopwatch can optionally be started automatically by calling `time` instead of `start`, which can streamline usage when polling the time repeatedly.
 
@@ -27,4 +27,14 @@ with Stopwatch(start=True) as stopwatch:
     stopwatch.reset()
 ```
 
-For more usage examples see [examples/](https://github.com/morefigs/stoppy/tree/main/examples).
+It can also be used as a direct replacement for `perf_counter` with absolute timing starting from zero.
+
+```python
+from stoppy import Stopwatch
+
+with Stopwatch() as stopwatch:
+    # Calling `stopwatch.time(True)` is equivalent to calling `perf_counter`, but starts from exactly zero
+    print(stopwatch.time(True))
+```
+
+For all usage examples see [examples/](https://github.com/morefigs/stoppy/tree/main/examples).

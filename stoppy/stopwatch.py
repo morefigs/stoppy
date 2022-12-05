@@ -4,10 +4,6 @@ from time import perf_counter
 
 
 class Stopwatch:
-    """
-    A precise and lightweight stopwatch built on top of `perf_counter`. Stopwatch can be used as a direct replacement
-    for `perf_counter`, but with absolute timing that starts from zero.
-    """
     _time_elapsed: float
     _perf_counter_zero: Optional[float]
 

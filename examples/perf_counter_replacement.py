@@ -1,5 +1,5 @@
 """
-Used as an equally precise replacement for `perf_counter`, but with absolute timing that starts from zero.
+Used as a direct replacement for `perf_counter` that returns absolute timing starting from zero.
 """
 from stoppy import Stopwatch
 
