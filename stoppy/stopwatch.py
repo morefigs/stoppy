@@ -1,11 +1,12 @@
+from __future__ import annotations
 from typing import Optional
 from time import perf_counter
 
 
 class Stopwatch:
     """
-    A precise stopwatch built on top of `perf_counter`. The stopwatch can optionally be started automatically by calling
-    `time` instead of `start`, which can streamline usage when polling the time repeatedly.
+    A precise and lightweight stopwatch built on top of `perf_counter`. Stopwatch can be used as a direct replacement
+    for `perf_counter`, but with absolute timing that starts from zero.
     """
     _time_elapsed: float
     _perf_counter_zero: Optional[float]
@@ -48,7 +49,8 @@ class Stopwatch:
 
     def time(self, start: bool = False) -> float:
         """
-        Get the stopwatch time, in seconds.
+        Get the stopwatch time, in seconds. The stopwatch can optionally be started automatically by calling `time`
+        instead of `start`, which can streamline usage when polling the time repeatedly.
         :param start: Start the stopwatch if it's not running. If the stopwatch is not running and start is True, the
         time returned will be the time immediately before it starts, e.g. it will return exactly 0 for a new object.
         """
