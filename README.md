@@ -27,4 +27,4 @@ print(stopwatch.time())
 stopwatch.reset()
 ```
 
-For more usage examples see [examples/](examples).
+For more usage examples see [examples/](https://github.com/morefigs/stoppy/tree/main/examples).
