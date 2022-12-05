@@ -1,6 +1,3 @@
-"""
-Used as a direct replacement for `perf_counter` that returns absolute timing starting from zero.
-"""
 from stoppy import Stopwatch
 
 
