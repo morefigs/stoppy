@@ -20,11 +20,11 @@ Basic usage is as follows:
 from time import sleep
 from stoppy import Stopwatch
 
-stopwatch = Stopwatch(start=True)
-sleep(1)
-stopwatch.stop()
-print(stopwatch.time())
-stopwatch.reset()
+with Stopwatch(start=True) as stopwatch:
+    sleep(0.1)
+    stopwatch.stop()
+    print(stopwatch.time())
+    stopwatch.reset()
 ```
 
 For more usage examples see [examples/](https://github.com/morefigs/stoppy/tree/main/examples).

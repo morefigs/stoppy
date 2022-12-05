@@ -16,6 +16,12 @@ class Stopwatch:
         """
         self.reset(start)
 
+    def __enter__(self) -> Stopwatch:
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb) -> None:
+        pass
+
     @property
     def running(self) -> bool:
         return self._perf_counter_zero is not None
