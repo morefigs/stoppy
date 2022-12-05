@@ -27,7 +27,7 @@ with Stopwatch(start=True) as stopwatch:
     stopwatch.reset()
 ```
 
-It can also be used as a direct replacement for `perf_counter` with absolute timing starting from zero.
+It can also be used as a direct replacement for `perf_counter` with absolute timing starting from zero:
 
 ```python
 from stoppy import Stopwatch
