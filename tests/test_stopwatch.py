@@ -23,6 +23,10 @@ class TestStopwatch:
         stopwatch = Stopwatch(True)
         assert stopwatch.time() > 0
 
+    def test_enter_exit(self):
+        with Stopwatch() as stopwatch:
+            stopwatch.time()
+
     def test_running(self, stopwatch: Stopwatch):
         assert not stopwatch.running
         stopwatch.start()
