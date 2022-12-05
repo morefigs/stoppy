@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "stopwatch"
+name = "stoppy"
 version = "1.0.0"
 description = "A precise stopwatch built on top of perf_counter."
 authors = ["morefigs"]
-homepage = "https://github.com/morefigs/stopwatch"
+homepage = "https://github.com/morefigs/stoppy"
 readme = "README.md"
-packages = [{include = "stopwatch"}]
+packages = [{include = "stoppy"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"

@@ -3,7 +3,7 @@ from math import isclose
 
 import pytest
 
-from stopwatch.stopwatch import Stopwatch
+from stoppy.stopwatch import Stopwatch
 
 
 STEP = 0.5

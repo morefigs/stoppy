@@ -1,6 +1,6 @@
 from time import sleep
 
-from stopwatch import Stopwatch
+from stoppy import Stopwatch
 
 
 stopwatch = Stopwatch(start=True)

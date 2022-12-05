@@ -1,4 +1,4 @@
-# Stopwatch ⏱
+# stoppy ⏱
 
 A precise stopwatch built on top of `perf_counter`.
 
@@ -9,7 +9,7 @@ The stopwatch can optionally be started automatically by calling `time` instead 
 Install from [PyPI](https://pypi.org/project/stopwatch/) via:
 
 ```shell
-pip install stopwatch
+pip install stoppy
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ Basic usage is as follows:
 
 ```python
 from time import sleep
-from stopwatch import Stopwatch
+from stoppy import Stopwatch
 
 stopwatch = Stopwatch(start=True)
 sleep(1)
