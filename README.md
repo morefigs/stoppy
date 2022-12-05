@@ -6,7 +6,7 @@ The stopwatch can optionally be started automatically by calling `time` instead 
 
 ## Installation
 
-Install from [PyPI](https://pypi.org/project/stopwatch/) via:
+Install from [PyPI](https://pypi.org/project/stoppy/) via:
 
 ```shell
 pip install stoppy
