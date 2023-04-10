@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "stoppy"
-version = "1.0.4"
+version = "1.0.5"
 description = "A precise and lightweight stopwatch built on top of `perf_counter`, which can be used as a replacement for `perf_counter` that returns absolute time starting from zero."
 authors = ["morefigs"]
 homepage = "https://github.com/morefigs/stoppy"
